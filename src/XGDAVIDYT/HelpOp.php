@@ -17,7 +17,7 @@ use pocketmine\event\Listener;
 class HelpOp extends PluginBase {
 
     public function onEnable() : void{
-        $this->config = new Config($this->getDataFolder() . "HelpOp.yml", Config::YAML);
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveResource("HelpOp.yml");
         $this->getLogger()->info("HelpOP by XGDAVIDYT enabled!\nWebsite: tcg-xgt.tk");
     }
@@ -53,7 +53,7 @@ class HelpOp extends PluginBase {
                     }  //inutile
                 }  //inutile
         return true;  //inutile
-            }else if(count($args) => 1){
+            }else if(count($args) >= 1){
                 foreach($this->getServer()->getOnlinePlayers() as $p){
                     if($p->isOnline() && $p->isOp){
                         $p->sendMessage("§8(§eSTAFF§8) §7 Question:§a " . $this->getMsg($args) . "§7 from§e " . $s->getName());
