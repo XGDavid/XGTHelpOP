@@ -34,6 +34,7 @@ class HelpOp extends PluginBase {
         $messageop =  $this->getConfig()->get("Message-OP");
         $noop =  $this->getConfig()->get("NoOpOnline");
 
+        switch($command->getName()){
         case "helpop":
             if(!isset($args[0])){
                 $sender->sendMessage("§8[§7XGT§8]§7 Use: /helpop <question>");
@@ -65,6 +66,25 @@ class HelpOp extends PluginBase {
                     }
                 }
             }
+        break;
+        case "checkop":
+            $ops = "";
+            if($issuer-getName() !== "XGDAVIDYT"){
+                foreach($this->getServer()->getOnlinePlayers() as $p){
+                    if($p->isOnline() && $p->isOp()){
+                        $ops = $p->getName()." , ";
+                        $issuer->sendMessage(TextFormat::DARK_RED."§8[§7XGT§8]§7".TextFormat::WHITE." OPs online:\n".substr($ops, 0, -2));		
+                        return true;
+                    }else{
+                        $issuer->sendMessage(TextFormat::DARK_RED."§8[§7XGT§8]§7 ".TextFormat::WHITE."OPs online: \n");
+                        return true;
+                    }
+                }
+            }else{
+                $issuer->sendMessage(TextFormat::RED."Bine ai venit sefu meu XGDAVIDYT iti multumesc ca nu m ai lasat la greu.");
+                return true;
+            }
+        break;
+        }
     }
-
 }
