@@ -13,6 +13,12 @@ use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\entity;
 use pocketmine\event\Listener;
+use pocketmine\utils\Config;
+use pocketmine\utils\Utils;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginManager;
+
+use function count;
 
 class HelpOp extends PluginBase {
 
