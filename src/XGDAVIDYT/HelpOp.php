@@ -19,7 +19,7 @@ class HelpOp extends PluginBase {
     public function onEnable() : void{
         $this->config = new Config($this->getDataFolder() . "HelpOp.yml", Config::YAML);
         $this->saveResource("HelpOp.yml");
-        $this->getLogger()->info("HelpOP by XGDAVIDYT enabled!\nWebsite: tcg-xgt.tk")
+        $this->getLogger()->info("HelpOP by XGDAVIDYT enabled!\nWebsite: tcg-xgt.tk");
     }
 
     public function onJoin(PlayerJoinEvent $event) {
