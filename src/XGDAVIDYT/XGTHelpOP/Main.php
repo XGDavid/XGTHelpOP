@@ -39,10 +39,10 @@ class Main extends PluginBase implements Listener{
 			}elseif(count($args) > 0){
 				foreach($this->getServer()->getOnlinePlayers() as $p){
 					if($p->isOnline() && $p->isOp()){
-							$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§a " . $sender->getName() . " §7" . $messageop);
-							$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§7 §7Question:§a " . $this->getMsg($args) . " §7from §a" . $sender->getName());
-							$sender->sendMessage(TextFormat::DARK_RED."§8[§bXGT-HELPOP§8]§7 Your question sent to a OP!");
-							return true;
+						$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§a " . $sender->getName() . " §7" . $messageop);
+						$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§7 §7Question:§a " . $this->getMsg($args) . " §7from §a" . $sender->getName());
+						$sender->sendMessage(TextFormat::DARK_RED."§8[§bXGT-HELPOP§8]§7 Your question sent to a OP!");
+						return true;
 					}else{
 						$sender->sendMessage(TextFormat::DARK_RED."§8[§bXGT-HELPOP§8]§7 " . $noop);
 						return true;
