@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/XGDavid/XGTHelpOP
+build-by-default: true
+branches:
+- master
+projects:
+  XGTHelpOP:
+    path: ""
+    icon: "helpoppmmp.png"
+...
