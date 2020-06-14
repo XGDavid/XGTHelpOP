@@ -18,7 +18,7 @@ Ask for the help of an OP.
 
 5. Have FUN!
 
-[![Youtube Video TUTORIAL]()](https://www.youtube.com/watch?v=2sHQXiERC8k)
+[Youtube Video TUTORIAL](https://www.youtube.com/watch?v=2sHQXiERC8k)
 
 
 ## Features
