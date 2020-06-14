@@ -17,9 +17,8 @@ use pocketmine\utils\Utils;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginManager;
 
-use function count;
 
-class HelpOp extends PluginBase {
+class Main extends PluginBase implements Listener{
 
     public function onEnable() : void{
         $this->saveResource("config.yml");
