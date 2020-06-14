@@ -1,8 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-
-namespace XGDAVIDYT\HelpOP;
+namespace XGDAVIDYT\XGTHelpOP;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
@@ -17,10 +17,9 @@ use pocketmine\utils\Utils;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginManager;
 
+class Main extends PluginBase{
 
-class Main extends PluginBase implements Listener{
-
-    public function onEnable() : void{
+	public function onEnable() : void{
         $this->saveResource("config.yml");
     }
 

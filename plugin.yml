@@ -1,10 +1,12 @@
+---
 name: XGTHelpOP
+version: 0.0.1
 main: XGDAVIDYT\XGTHelpOP\Main
-version: 1.0.0
-api: 3.12.1
+api: 3.12.3
 author: XGDAVIDYT
 commands:
   helpop: 
     description: Request help.
   checkop:
     description: Check ops online.
+...
