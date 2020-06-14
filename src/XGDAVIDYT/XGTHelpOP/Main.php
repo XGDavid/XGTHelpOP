@@ -25,8 +25,6 @@ class Main extends PluginBase{
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 
-        $sender = $sender;
-        $cmd = $command;
         $messageop =  $this->getConfig()->get("Message-OP");
         $noop =  $this->getConfig()->get("NoOpOnline");
 
@@ -37,7 +35,7 @@ class Main extends PluginBase{
 				return true;
 			}elseif(count($args) > 0){
 				foreach($this->getServer()->getOnlinePlayers() as $p){
-					if($p->isOnline() && $p->isOp()){
+					if($p->isOp()){
 						$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§a " . $sender->getName() . " §7" . $messageop);
 						$p->sendMessage(TextFormat::DARK_RED."§8[§bXGT-STAFF§8]§7 §7Question:§a " . $this->getMsg($args) . " §7from §a" . $sender->getName());
 						$sender->sendMessage(TextFormat::DARK_RED."§8[§bXGT-HELPOP§8]§7 Your question sent to a OP!");
@@ -48,14 +46,14 @@ class Main extends PluginBase{
 					}
 				}
 			}
-    }
+		}
     
 		
 
 		if($command->getName() === "checkop"){
 			$ops = "";
 			foreach($this->getServer()->getOnlinePlayers() as $p){
-				if($p->isOnline() && $p->isOp()){
+				if($p->isOp()){
 					$ops = $p->getName()." , ";
 					$sender->sendMessage(TextFormat::DARK_RED."§8[§bXGT-HELPOP§8]§7".TextFormat::WHITE." OPs online:\n".substr($ops, 0, -2));		
 					return true;
