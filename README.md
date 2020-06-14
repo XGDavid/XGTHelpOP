@@ -34,3 +34,10 @@ Ask for the help of an OP.
 
 
 ## Config
+
+```
+#Send message to OP.
+Message-OP: "§7needs your help!"
+#No Op online message
+NoOpOnline: "§7No OPs online."
+```
