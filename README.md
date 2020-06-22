@@ -4,7 +4,7 @@
 
 
 This is a PocketMine Plugin.
-Ask for the help of an OP.
+With this plugin you can ask for the help of an OP, as well as to see OPs online.
 
 ## How to install
 
