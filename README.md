@@ -18,8 +18,6 @@ With this plugin you can ask for the help of an OP, as well as to see OPs online
 
 5. Have FUN!
 
-[Youtube Video TUTORIAL](https://www.youtube.com/watch?v=2sHQXiERC8k)
-
 
 ## Features
 - [X] Config
