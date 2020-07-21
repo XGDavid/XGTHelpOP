@@ -1,8 +1,8 @@
 ---
 name: XGTHelpOP
-version: 0.0.1
+version: 1.0.0
 main: XGDAVIDYT\XGTHelpOP\Main
-api: 3.12.0
+api: 3.14.1
 author: XGDAVIDYT
 commands:
   helpop: 
