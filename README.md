@@ -24,6 +24,9 @@ With this plugin you can ask for the help of an OP, as well as to see OPs online
 
 - [X] Costom Message
 
+- [X] Delay Command
+
+
 ## Other
 
 [![Discord](https://img.shields.io/discord/689211475537297411?logo=discord)](https://discord.gg/h8uTKFh)
@@ -34,8 +37,15 @@ With this plugin you can ask for the help of an OP, as well as to see OPs online
 ## Config
 
 ```
+Delay: 300
+#How long to wait to ask for help again, in seconds
+
+# Messages:
+
 #Send message to OP.
 Message-OP: "§7needs your help!"
+#No Acces Message
+NoAcces: "You don;t have acces!"
 #No Op online message
 NoOpOnline: "§7No OPs online."
 ```
