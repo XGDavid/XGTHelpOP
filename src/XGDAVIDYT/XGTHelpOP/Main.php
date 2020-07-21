@@ -40,7 +40,7 @@ class Main extends PluginBase implements Listener{
 			}else{
 				if(!$sender->hasPermission("xgthelpop.helpop")){
 					$sender->sendMessage("§8[§bXGT-HELPOP§8]§c " . $noacces);
-					return;
+					return false;
 				}
 				if(count($args) < 0){
 					$sender->sendMessage("§8[§bXGT-HELPOP§8]§7 Use: §b/helpop §7<§bquestion§7>");
