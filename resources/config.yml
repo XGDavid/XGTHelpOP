@@ -1,5 +1,17 @@
+#XGTHelpOP
+
+#version
+version: 1.0
+# DON'T EDIT!!!
+
+Delay: 300
+#How long to wait to ask for help again, in seconds
+
+# Messages:
 
 #Send message to OP.
 Message-OP: "§7needs your help!"
+#No Acces Message
+NoAcces: "You don;t have acces!"
 #No Op online message
 NoOpOnline: "§7No OPs online."
