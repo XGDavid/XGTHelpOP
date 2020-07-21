@@ -49,4 +49,3 @@ NoAcces: "You don;t have acces!"
 #No Op online message
 NoOpOnline: "§7No OPs online."
 ```
-
