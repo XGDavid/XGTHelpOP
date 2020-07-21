@@ -78,7 +78,7 @@ class Main extends PluginBase implements Listener{
 			}else{
 				if(!$sender->hasPermission("xgthelpop.checkop")){
 					$sender->sendMessage("§8[§bXGT-HELPOP§8]§c " . $noacces);
-					return;
+					return false;
 				}
 				$ops = "";
 				foreach($this->getServer()->getOnlinePlayers() as $p){
